@@ -23,6 +23,7 @@
     "*://*.toggl.com/*",
     "*://toggl.com/*",
     "*://*.teamweek.com/*",
+    "*://eventum.example.org/view.php*",
     "*://*.pivotaltracker.com/*",
     "*://*.github.com/*",
     "*://*.gitlab.com/*",
@@ -77,6 +78,7 @@
       "matches": [
         "*://*.teamweek.com/*",
         "*://*.pivotaltracker.com/*",
+        "*://eventum.example.org/view.php*",
         "*://*.github.com/*",
         "*://*.gitlab.com/*",
         "*://*.testrail.com/*",
@@ -258,6 +260,12 @@
     {
       "matches": ["*://*.wunderlist.com/*"],
       "js": ["scripts/content/wunderlist.js"]
+    },
+    {
+      "matches": [
+        "*://eventum.example.org/view.php*"
+      ],
+      "js": ["scripts/content/eventum.js"]
     },
     {
       "matches": ["*://*.toodledo.com/*"],
