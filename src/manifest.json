@@ -3,7 +3,7 @@
   "short_name": "Toggl Button",
   "version": "0.6.8",
   "manifest_version": 2,
-  "description": "Add Official Toggl Online Timer to Popular Web Tools",
+  "description": "Add Toggl Online Timer to Popular Web Tools (Modified)",
   "background": {
     "scripts": [
       "scripts/background.js"
