@@ -23,7 +23,7 @@ var TogglButton = {
       '<a class="toggl-button {service} active" href="#">Stop timer</a>' +
       '<a id="toggl-button-hide">&times;</a>' +
       '<div class="toggl-button-row">' +
-        '<input name="toggl-button-description" type="text" id="toggl-button-description" class="toggl-button-input" value="">' +
+        '<input name="toggl-button-description" type="text" id="toggl-button-description" class="toggl-button-input" value="" placeholder="(no description)">' +
       '</div>' +
       '<div class="toggl-button-row">' +
         '<select class="toggl-button-input" id="toggl-button-project" name="toggl-button-project">{projects}</select>' +
@@ -339,6 +339,9 @@ var TogglButton = {
       } else {
         title = "(no description) - Toggl";
       }
+      chrome.browserAction.setBadgeText(
+        {text: ""}
+      );
     }
     chrome.browserAction.setTitle({
       title: title
